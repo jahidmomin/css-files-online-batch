@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Display flow root</title>
+	<style type="text/css">
+		.parent{
+			background: green;
+			border:1px solid ;
+			width:600px; 
+			/*caniuse*/
+			display: flow-root;
+		}
+		.child{
+			background: red;
+			width: 100px;
+			height: 100px;
+			float: left;
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child">
+			Inner
+		</div>
+	</div>
+</body>
+</html>

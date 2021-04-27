@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Html forms </title>
+</head>
+<body>
+
+	<!-- form- -->
+		<!-- user data input -->
+
+		<!-- get/post -->
+		<!-- backend -> 
+			firstname,lastname ? -->
+		<!--
+			GET :
+				submit.php ? firstname=jahid & lastname=momin
+				name / value 
+		-->
+
+	<form action="backenfile.php" method="post" >
+		<table border="1"  bgcolor="tomato">
+			<thead>
+				<tr>
+					<th colspan="2">
+						<h3>User Registration Form</h3>
+					</th>
+				</tr>
+			</thead>
+
+			<tbody>
+				<tr>
+					<td>
+						<label>Enter a email :</label>
+					</td>
+					<td>
+						<input type="email" name="useremail">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Enter a Password :</label>
+					</td>
+					<td>
+						<input type="password" name="userpass">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Enter a Age :</label>
+					</td>
+					<td>
+						<input type="number" name="userage">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Select a Birthdate :</label>
+					</td>
+					<td>
+						<input type="date" name="userdob">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label>Select a Birth Time :</label>
+					</td>
+					<td>
+						<input type="time" name="userbirthtime">
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label>Select a Skills :</label>
+					</td>
+					<td>
+						<input type="checkbox" name="html" value="html">HTML
+						<input type="checkbox" name="css" value="css">CSS
+						<input type="checkbox" name="js" value="js">Javascript
+						<input type="checkbox" name="php" value="php">php
+					</td>
+				</tr>
+
+
+				<tr>
+					<td>
+						<label>Select a Gender :</label>
+					</td>
+					<td>
+						<input type="radio" name="gender" value="m">Male
+						<input type="radio" name="gender" value="f">Female
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Select a Technologies:</label>
+					</td>
+					<td>
+						<select name="tech">
+							<option value="	">HTML</option>
+							<option value="css">CSS</option>
+							<option value="php">Php</option>
+							<option value="js">JS</option>
+							<option value="python">PYTHON</option>
+						</select>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Select a profile pic:</label>
+					</td>
+					<td>
+						<input type="file" name="pic">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<label>Message here:</label>
+					</td>
+					<td>
+						<textarea name="msg" cols="50	" rows="3">
+							
+						</textarea>
+					</td>
+				</tr>
+
+
+			</tbody>
+
+			<tfoot>
+				<tr>
+					<td>
+						<input type="submit" name="submit">
+					</td>
+					<td>
+						<input type="reset" name="reset">
+					</td>
+				</tr>
+			</tfoot>
+		</table>
+	</form>	
+
+</body>	
+</html>
