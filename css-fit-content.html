@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Fit content grid</title>
+	<style type="text/css">
+		.container{
+			background-color: lightgreen;
+			width: 600px;
+			margin: 70px 0 0 50px;
+			display: grid;
+
+			/*work like max-width*/
+			/*max-width ->col- > 200px;*/
+			grid-template-columns:fit-content(200px) fit-content(300px) 1fr;
+			grid-template-rows: repeat(2,min-content) ;
+
+		}
+
+		#item1{
+			background-color: orange;
+		}
+
+		#item2{
+			background-color: red;
+		}
+		#item3{
+			background-color: green;
+		}
+		#item4{
+			background-color: blue;		}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="item1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum. loremasdasdsdad</div>
+		<div id="item2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut tenetur distinctio eveniet ipsum animi eligendi eaque nesciunt natus, dolore molestiae architecto, maxime at, ut quisquam adipisci ipsam recusandae mollitia. Deleniti tenetur totam omnis ipsam! Voluptas earum temporibus nihil ab voluptate, facere vitae cupiditate nesciunt iure ad inventore, iste corrupti quod laboriosam doloremque excepturi recusandae dolor praesentium doloribus animi molestiae, repellat, et incidunt harum voluptatum? Eaque veritatis voluptas doloribus magnam nesciunt dolore officia praesentium quaerat, repellat ea rerum! Nam molestiae quam esse quo quis libero officia, voluptas quibusdam eaque ipsa quidem incidunt possimus? Expedita voluptas culpa earum magni possimus odit.</div>
+		<div id="item3">3</div>
+		<div id="item4">4</div>
+
+	</div>
+</body>
+</html>

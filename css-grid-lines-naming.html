@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css grid</title>
+	<style type="text/css">
+		.container{
+			background-color: lightgreen;
+			text-align: center;
+			font-size: larger;
+			color: white;
+			font-weight: bolder;
+			width: 700px;
+			/*height: 100vh;*/
+			/*margin: 70px 0 0 50px;*/
+			display: grid;
+			margin: 0;
+
+			/*Name :*/
+				/*No Space */
+
+				/*for repaeat/*/
+		/*grid-template-columns:repeat(3,[col-start] 1fr [col-end]);*/
+
+
+			grid-template-columns:[col-1-start] 1fr [col-1-end col-2-start] 1fr [col-2-end col-3-start] 1fr[col-3-end];
+
+			grid-template-rows:[row1-start] 100px [row1-end row2-start] 50px [row2-end row3-start] 300px [row3-end row4-start] 50px [row4-end];
+
+			/*grid-gap:25px 50px;*/
+			grid-gap: 10px;
+
+			/*positioning*/
+			/*SPANNing*/
+			/*grid line naming*/
+
+		}
+
+		#item1{
+			background-color: orange;
+			
+			grid-row: row1-start / row1-end;
+			grid-column: col-1-start / col-3-end;			
+		}
+
+		#item2{
+			background-color: red;
+			grid-row:row2-start / row2-end;
+			grid-column: col-1-start /col-3-end;
+		}
+		#item3{
+			background-color: green;
+			grid-row: row2-end / row3-end;
+			grid-column: col-2-start/ col-2-end;
+		}
+		#item4{
+			background-color: blue;
+			grid-row: row3-start / row3-end;
+			grid-column: col-3-start/ col-3-end;
+		}
+		#item5{
+			background-color: gray;
+			/*grid-column: span 3;*/
+
+			/*for repeat*/
+			/*grid-column: col-start 1 / col-end 2;*/
+
+			grid-column: col-1-start/ col-1-end;
+			grid-column: col-1-start/ col-3-end;
+		}
+		#item6{
+			background-color: purple;
+			grid-column: col-1-start/ col-2-end;
+			grid-row: row3-start / row3-end;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="item1">Pro Web</div>
+		<div id="item2">Menu</div>
+		<div id="item6">SideMenu 1</div>
+		<!-- <div id="item3">Content</div> -->
+		<div id="item4">SideMenu 2</div>
+		<div id="item5">Footer</div>
+		<!-- <div id="item6">6</div> -->
+	</div>
+</body>
+</html>

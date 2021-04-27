@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Min Max</title>
+	<style type="text/css">
+		.container{
+			background-color: lightgreen;
+			width: 80%;
+			/*margin: 70px 0 0 50px;*/
+			display: grid;
+
+			/*max-content : jitna content utni size;*/
+			/*min-content : large word ke jitni size*/
+			/*minmax(mini size,max size)*/
+			grid-template-columns:minmax(200px,min-content) minmax(200px,min-content);
+			grid-template-rows: minmax(150px,min-content) 200px;
+		
+		}
+
+		#item1{
+			background-color: orange;
+		}
+
+		#item2{
+			background-color: red;
+			/*z-index: 10;*/
+		}
+		#item3{
+			background-color: green;
+		}
+		#item4{
+			background-color: blue;
+		}
+		#item5{
+			background-color: gray;
+		}
+		#item6{
+			background-color: purple;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="item1">1</div>
+		<div id="item2"></div>
+		<div id="item3">3</div>
+		<div id="item4">4</div>
+
+	</div>
+</body>
+</html>

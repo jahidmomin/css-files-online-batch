@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css AutoFit Auto Fill grid</title>
+	<style type="text/css">
+		.container{
+			background-color: lightgreen;
+			width: 100%;
+			margin: 70px 0 0 50px;
+			display: grid;
+			/*height: 700px;*/
+
+			/*we created - explicite grid // css apply */
+
+			/*full responsive*/
+			grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+
+			/*track create krta autmoatically pehlesehe*/
+			/*grid-template-columns: repeat(auto-fill,100px);*/
+			grid-template-rows: repeat(2,100px) ;
+
+		}
+
+		#item1{
+			background-color: orange;
+		}
+
+		#item2{
+			background-color: red;
+		}
+		#item3{
+			background-color: green;
+		}
+		#item4{
+			background-color: blue;		}
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="item1">1</div>
+		<div id="item2">2</div>
+		<div id="item3">3</div>
+		<div id="item4">4</div>
+
+	</div>
+</body>
+</html>

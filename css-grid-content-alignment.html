@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Implicit /Expliit grid</title>
+	<style type="text/css">
+		.container{
+			background-color: lightgreen;
+			width: 1000px;
+			margin: 70px 0 0 50px;
+			display: grid;
+			height: 700px;
+			/*we created - explicite grid // css apply */
+			grid-template-columns: repeat(3,100px);
+			grid-template-rows: repeat(2,100px) ;
+
+			/*grid-gap:25px 50px;*/
+			/*automatically generated row */
+			/*implicite grid*/
+
+			/*by default rows will created */
+			/*but -> column create kre automatically*/
+			/*?*/
+			/*grid-auto-flow:row;*/
+			grid-auto-flow: column;
+			grid-auto-columns:100px;
+			/*grid-auto-rows: 200px;*/
+
+			/*justify-content: space-evenly;*/
+			/*justify-content:space-between;*/
+			/*justify-content:space-around;*/
+			/*justify-content:center;*/
+			/*justify-content:end;*/
+			/*justify-content:start;*/
+
+
+			/*align-content: space-evenly;*/
+			/*align-content:space-between;*/
+			/*align-content:space-around;*/
+			/*align-content:center;*/
+			/*align-content:end;*/
+			/*align-content:start;*/
+
+			/*shorthand */
+			place-content:center center;
+		}
+
+		#item1{
+			background-color: orange;
+		}
+
+		#item2{
+			background-color: red;
+		}
+		#item3{
+			background-color: green;
+		}
+		#item4{
+			background-color: blue;		}
+		#item5{
+			background-color: gray;
+		}
+		#item6{
+			background-color: purple;
+		}
+
+		#item7{
+			background-color: hotpink;
+		}
+		#item8{
+			background-color: gold;
+		}
+		#item9{
+			background-color: dodgerblue;
+		}
+		#item10{
+			background-color: skyblue;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="item1">1</div>
+		<div id="item2">2</div>
+		<div id="item3">3</div>
+		<div id="item4">4</div>
+		<div id="item5">5</div>
+		<div id="item6">6</div>
+
+		<div id="item7">7</div>
+		<div id="item8">8</div>
+
+		<div id="item9">9</div>
+		<div id="item10">10</div>
+	</div>
+</body>
+</html>
