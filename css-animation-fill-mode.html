@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Animation Fill Mode</title>
+	<style type="text/css">
+		body{
+			font-family: fantasy;
+			color: white;
+			text-align: center;
+		}
+		.box{
+			width: 210px;
+			height: 210px;
+			background-color: black;
+			margin-left: 20px;
+			animation: sample 3s 2s both;
+
+			/* 0% wali css apply krdega.*/
+			/*animation-fill-mode: backwards;*/
+
+
+			/* 100% wali css apply krdega.
+			   not - initial css/0% css
+			*/
+			/*animation-fill-mode: forwards;*/
+
+
+			/* both*/
+			/*animation-fill-mode: both;*/
+
+			/*animation-play-state: paused;/running;*/
+
+		}
+		.box:hover{
+			animation-play-state: paused;
+		}
+
+		/*delay time  -  initial color black 5s*/
+		/* yellow.*/
+		/*fill mode - css pehle/badme*/
+		@keyframes sample {
+			0%{
+				background-color: yellow;width: 300px;
+			}
+			50%{
+				background-color: green;width: 380px;
+			}
+			100%{
+				background-color: red;width: 450px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		WEB DEV
+	</div>
+</body>
+</html>
