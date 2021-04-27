@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Implicit /Expliit grid</title>
+	<style type="text/css">
+		.container{
+			background-color: lightgreen;
+			width: 700px;
+			margin: 70px 0 0 50px;
+			display: grid;
+
+			/*we created - explicite grid // css apply */
+			grid-template-columns: repeat(3,1fr);
+			grid-template-rows: repeat(2,100px) ;
+
+			/*grid-gap:25px 50px;*/
+			/*automatically generated row */
+			/*implicite grid*/
+
+			/*by default rows will created */
+			/*but -> column create kre automatically*/
+			/*?*/
+			/*grid-auto-flow:row;*/
+			grid-auto-flow: column;
+			grid-auto-columns:1fr;
+			/*grid-auto-rows: 200px;*/
+
+		}
+
+		#item1{
+			background-color: orange;
+		}
+
+		#item2{
+			background-color: red;
+		}
+		#item3{
+			background-color: green;
+		}
+		#item4{
+			background-color: blue;		}
+		#item5{
+			background-color: gray;
+		}
+		#item6{
+			background-color: purple;
+		}
+
+		#item7{
+			background-color: hotpink;
+		}
+		#item8{
+			background-color: gold;
+		}
+		#item9{
+			background-color: dodgerblue;
+		}
+		#item10{
+			background-color: skyblue;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div id="item1">1</div>
+		<div id="item2">2</div>
+		<div id="item3">3</div>
+		<div id="item4">4</div>
+		<div id="item5">5</div>
+		<div id="item6">6</div>
+
+		<div id="item7">7</div>
+		<div id="item8">8</div>
+
+		<div id="item9">9</div>
+		<div id="item10">10</div>
+	</div>
+</body>
+</html>

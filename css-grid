@@ -1,0 +1,86 @@
+Grid :
+	Handle Row/Column layout.
+	Two Dimesionsal LAyout.
+	Css grid replaces float 
+	Fast / Clean 
+	No Css Frameworks. css2/3..
+
+Grid Row / Grid Column
+	??
+	-> Grid
+		display:grid
+			-> how many rows/cols?
+				-> items ...r/c
+
+ grid-template-rows or grid-template-columns
+
+
+Css Grid Positioning:
+	6 properties
+	1 property - shorthand.
+	
+Css grid spanning:
+	merging cols/rows.	
+	grid overlapping-z-index;
+	span use.
+
+//
+scroll-behavior: smooth; 
+
+Css	Naming grid lines
+	name to rows,cols
+	
+Css	Naming grid areas
+	grid-template-areas
+	grid-area
+
+	every grid items has grid-area property with particular name.
+
+	container -> grid-template-areas layout;
+
+minmax();
+	min-content,max-content
+	rows/cols height/width -> change
+	minmax(min,max);
+
+
+Implicit Grid & Explicit Grid;
+	explicit grid-we handle styling.
+		
+		automatically generated :implicite
+		grid-auto-rows:50px;
+
+		when we want implicite rows as cols;
+		grid-auto-flow:column;
+		grid-auto-columns:.5fr;
+
+Alignments oF grid Items.
+	
+			justify-items:end|start|center|strecth;
+			align-items:end|start|center|strecth;
+
+			place-items:start end
+
+			grid item ->
+					justify-self,align-self,place-self
+
+Alignments oF grid Tracks
+	(All Grid)
+	justify-content:start|end|center|stretch|space-around|space-between|space-evenly
+	align-content:start|end|center|stretch|space-around|space-between|space-evenly
+	place-content : align-content justify-content
+
+Css keywords used in repeat().
+	to make responsive.
+	auto-fit , minmax(some,mncontet)
+	auto-fill
+
+fit-content:
+	work like max-width
+
+order:
+	to set an order of grid items.
+
+nested grid
+	
+overlapping grid items	
