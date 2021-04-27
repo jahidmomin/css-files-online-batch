@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Tranformation</title>
+	<style type="text/css">
+		body{
+			font-family: fantasy;
+		}
+		#box{
+			width: 200px;
+			height: 200px;
+			margin: 150px;
+			background: lightgreen;
+			transition: all 3s ;
+		}
+		#box:hover{
+			/*background: red;*/
+			/*shorthands*/
+			/*rotate X Y ,skew X Y*/
+			/*150*2 =?*/
+			/*scale X Y shorthand*/
+			transform:scale(0.5,0.5);
+
+			/*move - X Y , Shorthand*/
+			/*transform: translate(300px,300px);*/
+
+			/*transform: rotate(190deg);*/
+
+			/*html ? animation -> 0-360 4 times*/
+			transform: skew(15deg,50deg);
+			/* to change the origin*/
+			/*transform-origin: right top;*/
+			/*transform-origin: 100% 100%;*/
+			/*matrix( scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY() )
+			transform: matrix(0.5);*/
+		}
+	</style>
+</head>
+<body>
+	<h1>CSS Tranformation</h1>
+	<div id="box">
+		Web Dev
+	</div>
+</body>
+</html>
