@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		img[alt="blur"]{
+			filter: blur(5px); 
+		}
+
+		img[alt="brightness"]{
+			/*0% -100%*/
+			filter: brightness(100%); 
+		}
+
+		img[alt="contrast"]{
+			filter: contrast(50%); 
+		}
+
+		img[alt="drop"]{
+			filter: drop-shadow(50px 50px 20px #4444dd);
+		}
+
+		/*//try */
+	</style>
+</head>
+<body>
+	<img src="arrow.png" alt="blur">
+	<img src="car.jpg" width="400" height="500" alt="brightness">
+
+	<img src="arrow.png" alt="contrast">
+	<img src="car.jpg" width="400" height="500" alt="drop">
+</body>
+</html>

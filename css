@@ -1,0 +1,428 @@
+CSS - ?
+	Is a Styling Lang used for websites,
+	Cascading style sheets.
+	->how html displayed on screen .
+	->layouts of websites.
+	->designs.
+
+	Styles:
+		property:value.
+		color:red;
+
+	3 ways to use css in html.
+		-> div ,span,input
+
+	1] inline css - OK.
+		Style attribute.
+		<div class="" width="" style="" ></div>
+
+	2] Internal CSS:
+		Style Tag
+		<style>
+			/* head tag -> body is ok.*/
+
+			selector{
+				color:red;
+				/*css properties.*/
+				background-color: black;
+			}
+
+			ex 
+				h1{
+					color:red;
+				}
+
+		</style>
+		/*Selectors 
+				used to target an element/tag.
+		*/	
+
+	CSS Apply -> Tags
+		Target/Select .
+
+	Sytax:
+		<h2 style="color:red;">
+		</h2>
+
+	#Border ?
+		/*shorthand property*/
+		border : borderWidth borderStyle borderColor;
+		ex border:2px solid red;
+
+		/*Separate properties.*/
+		border-width:5px;
+		border-style:solid;
+		border-color:red;
+
+		border-top-style:dotted;
+		border-left-style:solid;
+		border-bottom-style:groove;
+		border-right-style:dashed;
+
+		border-top-style:solid;
+		border-top-width:5px;
+		border-top-color:green;
+
+		/*shorthand*/
+		border-top:5px solid green;
+
+		border-left:5px solid green;
+		border-right:5px solid green;
+		border-bottom:5px solid green;
+
+		border-radius -< used to add rounded borders to elements.
+		border-radius:5px;
+
+Font :
+		font-size: 50px;
+			font-weight: bolder;
+			font-family: monospace , cursive;
+			font-style: italic;
+			font-variant: small-caps ;
+
+			/*shorthand property*/
+			font:italic small-caps bolder 50px cursive;
+
+
+The CSS height and width properties are used to set the height and width of an element.
+		
+	 height: 200px;
+  	 width: 50%;
+
+	auto - This is default. The browser calculates the height and width
+	
+	length - Defines the height/width in px, cm etc.
+
+	% - Defines the height/width in percent of the containing block
+
+	initial - Sets the height/width to its default value
+
+	inherit - The height/width will be inherited from its parent value
+
+The CSS max-width property is used to set the maximum width of an element.
+The CSS min-width property is used to set the minimum width of an element.
+
+
+outline :
+	/*	outline-color: green;
+			outline-width: 5px;
+			outline-style: dashed;*/
+
+			/*shorthand*/
+			/*outline:2px dashed green;*/
+
+padding & margin
+
+text-formatting
+	many properties
+
+box-sizing:
+	ok
+
+overflow:
+	??
+
+
+float:
+	for left / right.
+
+clear:
+	for clear the float rule
+
+word wrap:
+  word overflow ke liy	
+  break-word/normal
+
+work-break:
+  break-all/
+
+whitespace:	
+	normal
+	nowrap
+	pre
+	pre-line
+	pre-wrap
+
+text-overflow:
+	ellipsis|clip(default)|string
+
+writing-mode:
+	Hozontally/vertically...
+
+column-count
+	paragraph me column
+
+List styles properties:
+	list-style-image:
+	list-style-position:
+	list-style-type:
+	list-style
+
+@font-face rule
+	? some fonts are not supported in browsers.
+	? font-face rule
+	font-family: Arial,Helvatica,sans-serif;
+	WebSafe Fonts
+
+	usecase:
+	yellow => Peter.
+	
+
+	h1{
+		color: Peter;
+	}
+
+	p{
+		color: Peter;
+	}
+
+	100 tags...
+
+
+	@font-face{
+		font-family: myFont;
+		src:url(AlexBrush.ttf);
+	}
+	
+	h1{
+		color: red;
+		font-family: myFont;
+	}
+
+	p{
+		font-family: myFont;
+	}
+
+
+/*background*/
+
+	/*set bg img*/
+	background-image:
+
+	/* bg img repeat/no-repeat*/
+	background-repeat:
+
+	/*bg img position left right ....*/
+	background-position:
+
+	/*bg img size*/
+	background-size:
+
+	/*img-> fixed /scroll*/
+	background-attachment:
+
+	/* start ?*/
+	background-origin:for bg img
+	background-clip:for bg color
+
+
+	
+css colors
+	normal color
+	hex code
+	rgb()
+	rgba()
+	hsl()
+	hsla()
+
+	linear-gradient()
+	repeating-linear-gradient()
+	radial-gradient()
+	repeating-radial-gradient()
+
+opacity:
+	0-1
+
+background-blend-modes -> img+graduent
+mix-blend-modes	< gradient .
+
+display:
+	to change the behaviour of elements/tags
+	inline to div.
+	 block to span.
+	 div -> table
+
+	 display:none;
+	 display:inline;
+	 display:block;
+	 display:inline-block;
+	 display:List-Item;
+	 flex;grid;table;....
+
+visibility:
+ 
+practical web layout-
+
+Position:
+	static() / relative / absolute /fixed / sticky
+
+	/*helper properties*/
+	top/bottom/left/right
+
+media queries-
+
+table properties.
+	
+resize:
+	div . h/w increse.
+	behaviro like textarea
+
+cursor
+	
+Units-
+	px,%,cm,mm,in,em,rem,....
+	vw,vh
+	Absolute units:
+	Relative units
+	vmin,vmax,%
+
+var()-
+	
+
+advanced selectoes
+	combinators -> realtion ke based pe elemnets select .
+	pseudo classes -> special state/action ke liye ...select tags..
+	Attr Selectors -> elements select attributes / values ke based pe.
+
+		Simple Selectors -> tag,id,class, univer*
+			Combinators -> 4typex . D,C,AS,GS.
+			Pseduo Classes -> 39 PC,
+			Attr Selectors -> 7 
+			Pseudo Elements -> 6 + 1
+
+attr() + caret-color
+
+clip-path
+
+Transition ??
+	smoothness actions.
+	
+	transition
+	transition-property :css properties name 
+	transition-duration : time
+	transition-delay:delay time
+	transition-timing-function:timing fun.
+
+	transition-timing-function: ease;//slow start then fast end slow
+	transition-timing-function: ease-in;slow start
+	transition-timing-function: ease-out;slow end
+	transition-timing-function: ease-in-out;slow start slow end
+	transition-timing-function: linear;same speed frm start to end
+	transition-timing-function: step-start;
+	transition-timing-function: step-end;
+	transition-timing-function: steps(5,end);
+	/*transition-timing-function: cubic-bezier(own values..)*/
+	
+@import rule
+	external css 
+
+transformation
+	transform: function(); 
+	rotate,resize,distort,move
+	2D - X,Y Axis
+	3D - X,Y,Z
+
+perspective
+	separate.	
+
+transform-style: ?
+	depend on tranform
+	2 values
+		float: bydfeault.
+		preserve-3d -> 3d
+
+backface-visibility:
+	depend on tranform 
+	2 values
+		hidden (bydefault)
+		visible
+	
+Animation: 
+	html element .
+
+	/*animation-delay*/
+	/*animation-direction*/
+	/*animation-duration*/
+	animation-fill-mode
+	/*animation-iteration-count*/
+	
+	/*animation-name :animationName;*/
+
+	animation-play-state
+	animation-timing-function
+
+	animation: shorthand property.
+
+	myanimation declared{}
+
+	how to defined animation:  ?
+	/*@font-face,@import*/
+	
+	@keyframes animationName{
+		from{css props}
+		to{css props}
+	}
+	/*0% - 100%*/
+	@keyframes animationName{
+		0%{css props}
+		50%{css props}
+		100%{css props}
+	}
+
+animation-fill-mode -
+	none,both,forwards,backwards
+
+animation-play-state
+	paused/running
+
+object-fit:
+	videos/images reposnive krne ke liye
+	
+
+shape-outside
+	depend on clip path
+
+filter :
+	
+	filter: functions(values);
+
+	blur()
+	Blurs the image.
+	
+	brightness()
+	Makes the image brighter or darker.
+	
+	contrast()
+	Increases or decreases the image's contrast.
+	
+	drop-shadow()
+	Applies a drop shadow behind the image.
+
+	grayscale()
+	Converts the image to grayscale.
+
+	hue-rotate()
+	Changes the overall hue of the image.
+	invert()
+	Inverts the colors of the image.
+	opacity()
+	Makes the image transparent.
+	saturate()
+	Super-saturates or desaturates the input image.
+	sepia()
+	Converts the image to sepia.
+
+User-Select
+	/*css3 */
+	/*for security purpose.*/
+
+box-decoration-break -  for text
+
+quotes ->
+	quotes css property.	
+
+border-image
+	
+smooth-scrolling
+
+grid

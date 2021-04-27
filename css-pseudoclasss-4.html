@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Pseduo CLasees form</title>
+	<style type="text/css">
+
+			/* var decalred krne ke */
+		:root{
+			--main-color:red;
+		}
+
+		/*<!-- attribute selector -->*/
+		input[type=text]{
+			background-color: var(--main-color);
+		}
+
+
+		input[type=text]:focus{
+			background-color: blue;
+		}
+
+		/* checked checkbox usko target krne ke liye*/
+		input[type='checkbox']:checked{
+			color:red;
+			box-shadow: 0 0 0 3px red;
+		}
+
+		input[type='checkbox']:checked + label{
+			/*font-family: cursive;*/
+			color: green;
+		}
+
+		input[type=radio]:checked{
+			color:red;
+			box-shadow: 0 0 0 3px red;
+		}
+
+		input[type=radio]:checked + label{
+			/*font-family: cursive;*/
+			color: green;
+		}	
+
+		/* jo inout field disbled hai usko target*/
+		input:disabled{
+			background:red;
+			box-shadow: 0 0 0 3px;
+		}
+
+		/* target enabled input fileds*/
+		input:enabled{
+			background:orange;
+		}
+
+		/*css3 ->  select required input field*/
+		input:required{
+			background-color: cyan;
+		}
+
+		/*css3 ->  select (!required)optional input field*/
+		input:optional{
+			background-color: tan;
+		}
+
+		/*css3 - type -> number */
+		/*in-range / out-of-range*/
+		input:in-range{
+			border:2px solid green;
+			background: green;
+		}
+		input:out-of-range{
+			border:2px solid red;
+			background: red;
+		}
+
+		/*css3 => readonly/read-write*/
+		input:read-only{
+			background-color: silver;
+		}
+		input:read-write{
+			background-color: gold;
+		}
+
+		/*validation ?/ */
+		input:valid{
+			border:2px solid green;
+			background-color: green;
+		}
+		input:invalid{
+			border:2px solid red;
+			background-color: red;
+		}
+
+		/*:default-> checkbox,radio,option*/
+		input:default + label{
+			box-shadow: 0 0 0 3px orange;
+			font-family: fantasy;
+		}
+
+		option:default{
+			/*box-shadow: 0 0 0 3px orange;*/
+			font-family: fantasy;
+		}
+
+
+	</style>
+</head>
+<body>
+	<form>
+		<table>
+			<tbody>
+				<tr>
+					<td>
+						<label>First Name</label>
+					</td>
+					<td>
+						<input type="text" name="" required>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Last Name</label>
+					</td>
+					<td>
+						<input type="text" value="XYZ" disabled>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Age Name</label>
+					</td>
+					<td>
+						<input type="number" name="" min="20" max="100" readonly>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>EMail Id</label>
+					</td>
+					<td>
+						<input type="email" name="" >
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Your Hobbies</label>
+					</td>
+					<td>
+						<input type="checkbox" checked name="swimming">
+						<label>Swimming</label>
+					</td>
+					<td>
+						<input type="checkbox" name="driving">
+						<label>Driving</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>Gender</label>
+					</td>
+					<td>
+						<input type="radio" checked name="gender">
+						<label>male</label>
+					</td>
+					<td>
+						<input type="radio" name="gender">
+						<label>female</label>
+					</td>
+				</tr>
+				<tr>
+					<td>Select SKill</td>
+					<td>
+						<select name="skills">
+							<option value="html" >HTML</option>
+							<option value="css" selected>CSS</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" value="Submit Form">
+					</td>
+					<td>
+						<input type="reset" value="Reset Form">
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</form>
+</body>
+</html>

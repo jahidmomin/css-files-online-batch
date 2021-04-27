@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Box-decoration-break</title>
+	<style type="text/css">
+		span{
+			background-color: wheat;
+			font-size: 21px;
+			line-height: 32px;
+			border:2px solid red;
+			border-radius: 5px;
+			/*box-decoration-break: slice;bydefailt*/
+			-webkit-box-decoration-break: clone;
+		}
+	</style>
+</head>
+<body>
+	<h1>Box-decoration-break</h1>
+	<span>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt <br/> ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation  <br/>ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor <br/>in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla <br/> pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+</body>
+</html>

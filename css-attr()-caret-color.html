@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css attr()</title>
+	<style type="text/css">
+		p{
+			font-family: fantasy;
+			font-size: 35px;
+			margin: 200px 0 0 30px;
+		}
+		p::after{
+			content: attr(data-name);
+			color: red;
+		}
+		/*Javascript */
+		input{
+			caret-color:blue;
+		}
+
+	</style>
+</head>
+<body>
+	<input type="" name="">
+	<p class="myStyle" id="myId" data-name="web Devlopement">
+		Internship
+	</p>
+</body>
+</html>

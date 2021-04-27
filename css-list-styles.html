@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css List Styles</title>
+	<style type="text/css">
+
+		body{
+			margin: 200px;
+		}
+		ol{
+			/*list-style-type:none; */
+			border:1px solid;
+			/*list-style-type:upper-roman; */
+			/*upper-alpha | upper-armenian*/
+			
+			/*list-style-type:upper-alpha; 
+			list-style-position: outside;
+			list-style-image: url("arrow.ico");
+			*/
+
+			list-style: url("arrow.ico") outside; 
+		}
+
+		ul{
+			/*list-style-type: none;*/
+			/*circle /  square / bengali /arabic-indic*/
+			list-style-type:square;
+			/*list-style-position: inside;*/
+			list-style-image: url("arrow.ico");
+		}
+
+		li{
+			background: red;
+			margin: 10px;
+			text-align: center;
+			font-family: cursive;
+			font-size: 50px;
+		}
+	</style>
+</head>
+<body>
+
+
+<h3>Ordered List</h3>
+	<ol>
+		<li>Milk</li>
+		<li>Butter</li>
+		<li>Ghee</li>
+		<li>Dahee</li>
+	</ol>
+
+<hr>
+
+<h3>Unordered List</h3>
+	<ul>
+		<li>Milk</li>
+		<li>Butter</li>
+		<li>Ghee</li>
+		<li>Dahee</li>
+	</ul>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css overflow</title>
+	<style type="text/css">
+		div{
+			text-align: justify;
+			font-family: cursive;
+		}
+		p{
+			width: 500px;
+			height: 300px;
+			margin:auto;
+			padding: 20px;
+			border:1px solid red;
+			box-sizing:border-box;
+
+			/* hidden se content hide.*/
+			/*overflow: hidden;*/
+			/*scroll bar ayega*/
+			/*overflow: scroll;*/
+			/*browser will handle if overflow*/
+			/*overflow: auto;*/
+
+			/*overlow visibke is by default*/
+				/*overflow: visible;*/
+				overflow-x: auto;
+				overflow-y: scroll;
+
+				border-top-left-radius: 20px;
+				border-bottom-right-radius: 20px;
+		}
+
+		.circle{
+			text-align: center;
+			width: 300px;
+			height: 300px;
+			border: 5px solid red;
+			border-radius: 50%;
+			background-color: red
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p>
+			<img src="1.png">
+			Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Similique omnis consequuntur, optio, consectetur vitae maxime cumque rerum laborum reprehenderit asperiores 
+			Lorem ipsum dolor sit amet consectetur, adipisicing, elit. Reiciendis, quasi, quis. Doloribus iste iure, nam sit illo provident ducimus corporis deleniti sunt non quisquam recusandae cum voluptatibus quae ex magni asperiores ad. Impedit dignissimos tempora autem quam doloremque, aliquid odio quae quasi rerum exercitationem fugiat repudiandae corrupti recusandae incidunt non excepturi cupiditate neque illum inventore totam ea iusto porro reiciendis fuga. Aut, velit illo numquam eos error mollitia sunt voluptates voluptatem repellendus fuga. Consectetur omnis fugit, dignissimos! Nam numquam magnam cumque sunt obcaecati deleniti consequatur ducimus unde quis, tempore. Beatae aliquam nulla rerum autem recusandae non pariatur distinctio iste tempore, reiciendis, aut obcaecati alias eos cupiditate fugiat quasi at consequuntur. Libero, perferendis eos, tempora inventore itaque atque sed soluta eaque repudiandae? Totam velit, omnis corporis ducimus mollitia doloremque soluta praesentium exercitationem non incidunt in quae consequatur voluptates laudantium voluptatem officia dolores itaque accusamus maxime! Corporis doloribus veritatis facere autem voluptatem.
+		</p>
+	</div>
+
+	<div class="circle">
+		circle
+	</div>
+</body>
+</html>

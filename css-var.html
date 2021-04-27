@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Var</title>
+	<style type="text/css">
+
+		/*variables -? store the data temporary.
+		data -> operation perform.
+		?
+		prog lang -> int , float, string ,char ,boolean
+
+		myColor:var(green);*/
+
+		/*pseudo classes*/
+		
+		:root{
+			/*globaly use of variables*/
+			--myColor:orange;
+			--margin-value:50px;
+		}
+
+		/*1] :root psedu class ?? ;
+		2] --varName : Value;
+		3] use -> var(--varName)
+*/
+
+		.parent{
+			/* parent decalre variable.*/
+			/*locally scope -> variables sirf child*/
+			--childColor:blue;
+			background-color: red;
+		}
+
+		.class1{
+			background-color: var(--childColor);
+			width: 200px;
+			height: 200px;
+			margin:var(--margin-value);
+		}
+		li{
+			background-color: var(--myColor);
+			width: 100px;
+			height: 100px;
+		}
+	</style>
+</head>
+<body>
+
+	<div class="parent">
+		<div class="class1">
+			child
+		</div>
+	</div>
+
+	<li>
+		kksdkd
+	</li>
+</body>
+</html>

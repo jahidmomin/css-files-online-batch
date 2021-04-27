@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Colors</title>
+	<style type="text/css">
+		.box , .gradient{
+			width: 500px;
+			height: 500px;
+			border-radius: 50%;
+			/*normal color names*/
+			/*http://www.html-color-names.com//*/
+			/*background-color:Coral;*/
+
+			/*color code - > hex code*/
+			/*#https://htmlcolorcodes.com/ */
+			/*background-color: #19F33F  ;*/
+
+			/* rgb(0,0,0) -> 0->255*/
+			/*rgb model -? 16mil + colors */
+			/*background-color: rgb(125,15,55);*/
+
+			/*rgba(0,0,0,alpha)*/
+			/* alpha -> opacity -> 0-1*/
+			/*background-color: rgba(255,15,200,0.4);*/
+
+			/*hsl() -> hue saturation lightness.*/
+			/*background-color:hsl(255,100%,50%);*/
+
+
+			/*hsl() -> hue saturation lightness opacity.*/
+			/*background-color:hsla(255,100%,50%,0.5);*/
+
+			/* same as hsl but one extra parameter*/
+			/*background-color: hsla(255,100%,10%,0.4);*/
+
+			/*background-color: #dffd;*/
+			border:1px solid;
+
+
+			/*css3 gradient*/
+			/*
+				bydefault -? to top
+					to left ,right, bottom,or combination of all.
+
+				degree of angle	
+			*/
+			/*background: linear-gradient(360deg,red,green 15%,blue 25%,rgb(212,125,115) 25%);*/
+			background: linear-gradient(red,green,blue,rgb(212,125,115));
+
+				/*FOR REPEAT GRADEINT*/
+			background:linear-gradient(to right,black,white,red,blue);
+			box-shadow: 0 3px 5px 2px;
+		}
+
+		.gradient{
+			background:repeating-linear-gradient(45deg,black,white 15%,red 10%,blue 25%);
+		}
+
+		.box2{
+			width: 500px;
+			height: 500px;
+			/*border-radius: 50%;*/
+			/* strat from center */
+			background:radial-gradient(farthest-corner at 25% 25%,black,white 5%,red 15%,green);
+			box-shadow: 0 3px 5px 2px;
+		}
+
+
+		.rgradient,.rd1,.rd2,.rd3,.rd4,.rd5{
+			height: 300px;
+			width: 300px;
+			background-image: radial-gradient(circle,black 5%,white 15%,gray 15%);
+		}
+
+
+
+		.rd1{
+			/*height: 500px;
+			width: 500px;*/
+			background-image: radial-gradient(closest-side at 25% 25%, red, yellow, black);
+		}
+		
+		.rd2{
+			background-image: radial-gradient(farthest-side at 75% 75%, red, yellow, black);
+		}
+		.rd3{
+			background-image: radial-gradient(closest-corner at 10% 10% , red, yellow, black);
+		}
+		.rd4{
+			background-image: radial-gradient(farthest-corner at 100% 75%, red, yellow, black);
+		}
+		.rd5{
+			background-image: repeating-radial-gradient(black 5%,white 8%,red 10%);
+		}
+
+		.card{
+			width: 300px;
+			height: 400px;
+			box-shadow: 0 2px 2px 1px ;
+			padding: 5px;
+			margin: 5px;
+			background:linear-gradient(45deg,rgba(124,121,145,0.5),rgba(14,12,14,0.5),hsl(145,50%,60%));
+			float: right;
+		}
+		.card h3{
+			padding: 3px;
+			font-family: cursive;
+			text-align: center;
+			background-color: hsla(245,60%,50%,0.5)
+		}
+		.boxes{
+			width: 100%;
+			height: 100%;
+			background-color: hsla(24,80%,80%,0.5);
+		}
+	</style>
+</head>
+<body>
+
+	<div class="boxes">
+		<div class="card">
+		<h3>HEllo WebDevs</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="card">
+		<h3>HEllo WebDevs</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="card">
+		<h3>HEllo WebDevs</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<div class="card">
+		<h3>HEllo WebDevs</h3>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	</div>
+
+
+	<div class="box">
+		Linear Gradient
+	</div>
+
+	<div class="gradient">
+		Linear Gradient Repeat
+	</div>
+
+
+	<div class="box2">
+		Radial Gradient
+	</div>
+
+Radial Gradient types
+	<div class="rd1">1</div>
+	<div class="rd2">2</div>
+	<div class="rd3">3</div>
+	<div class="rd4">4</div>
+
+	<div class="rd5">
+		
+	</div>
+</body>
+</html>

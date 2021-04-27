@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Psuedo Classes</title>
+	<style type="text/css">
+		/*Advanced selectors */
+		/*<!-- 39 pseudo classes -->*/
+
+/*
+			:first-child
+			
+			:last-child		*/
+
+
+			p :first-child{
+				color: red;
+				font-family: cursive;
+			}
+
+			p :last-child{
+				color: blue;
+			}
+
+			p :nth-child(even){
+				font-family: cursive;
+			}
+
+			p :nth-last-child(2){
+				font-family: fantasy;
+			}
+
+			p :nth-of-type(2){
+				background-color: green;
+			}
+
+
+			p :nth-last-of-type(2){
+				background-color: green;
+			}
+			
+
+
+			/*selectors :Pseudo Classes{
+				css propersties
+			}*/
+
+			/*only one child*/
+			p:only-child{
+				background-color: yellow;
+			}
+
+			span:only-of-type{
+				background-color: yellow;
+			}
+
+
+			/* target empty span tag*/
+			span:empty{
+				border:2px solid red;
+			}
+
+
+			/*first-of-type/
+			/*//*last-of-type/*/
+
+
+			p :first-of-type{
+				background-color: tan;
+			}
+			
+
+			/* we will se remaining psedo classees tomorrow.*/
+					
+	</style>
+</head>
+<body>
+		<div></div>
+
+			<p>
+				<span>Jahid</span>
+				<span></span>
+				<span>3</span>
+				<span>4</span>
+				<span>5</span>
+			</p>
+
+		<!-- 	<p>
+				d
+			</p> -->
+
+
+</body>
+</html>

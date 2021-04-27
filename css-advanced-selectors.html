@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Selectors</title>
+	<style type="text/css">
+
+		/*Combinator Selector*/
+
+
+/*
+		div p{
+			background-color: red;
+		}
+
+		div h1{
+			background-color: green;
+		}
+
+		/*descendant selectors.*/
+		/*div p span{
+			background-color: orange;
+		}*/
+	</style>
+</head>
+<body>
+	<!-- <div>
+		<h1>Hello</h1>
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation <span>ullamco</span> laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+	</div>
+
+	<h1>Hello 2</h1>
+
+
+
+	direct child selectors -->
+
+	<!-- <style type="text/css">
+		.parent > div{
+			color: lightgreen;
+		}
+	</style>
+
+	<div class="parent">
+		<div>
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco
+					<div>
+						lsadasdsadsadsadsadsadasdsdasdsadasdsa dsads d sad sa dsad sa dsa 
+					<div>
+		</p>
+		<div>child2</div>
+	</div> --> 
+
+	<!--  adjacent sibling selectors -->
+
+	<!-- <style type="text/css">
+		.pTag + h1{
+			background-color: red;
+		}
+	</style>
+
+	<div id="s1">Sibling 1</div>
+
+	<p class="pTag">sibling 2</p>
+
+	<h1>hello</h1> -->
+
+
+<!-- general siblng selectors -->
+
+<style type="text/css">
+	div ~ p{
+		background-color: orange;
+	}
+</style>
+	
+	<p>first p</p>
+	
+	<div>
+		<h3> h3 inside div</h3>
+	</div>
+	
+	<p> second p</p>
+	
+	<span> span </span>
+	
+	<p> third p</p>
+
+	<span>span 2</span>
+
+	<p> fourth p</p>
+</body>
+</html>

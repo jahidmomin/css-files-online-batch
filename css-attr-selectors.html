@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Attribute Selector</title>
+	<style type="text/css">
+		/*<!-- 
+			Simple Selectors -> tag,id,class, univer*
+			Combinators -> 4typex . D,C,AS,GS.
+			Pseduo Classes -> 39 PC,
+			Attr Selectors -> 7 
+			Pseudo Elements -> 6 
+		 -->*/
+
+		 /*A[attr]{}
+		 A[attr=val]{}
+		 A[attr^=val]{}
+		 A[attr|=val]{} 
+		 A[attr$=val]{}
+		 A[attr*=val]{}
+		 A[attr~=val]{}*/
+
+		 /*input[name=thing]{
+		 	background-color: yellow;
+		 }
+*/	
+
+	
+
+	/*div[id=MyId]{
+		width: 200px;
+		height: 200px;
+		background-color: yellow;
+	}*/
+
+	/*img[alt]{
+		border:1px solid red;
+	}
+	img[width]{
+		border:1px dashed orange;
+	}*/
+
+	/*attr whose value exactly same as below value*/
+/*	div[class=box]{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+	}*/
+
+/*exact.*/
+	/*img[alt="Some pic"]{
+
+		border-radius: 50%;	
+	}*/
+
+/*A[attr^=val]{}*/
+/* attribute value begining (starting match krta h).*/
+/*	img[alt^="Some pic"]{
+		border-radius: 50%;	
+	}*/
+
+	/*div[class^=box]{
+		width: 200px;
+			height: 200px;
+		background-color: green;
+	}
+*/
+ /*A[attr|=val]{}*/
+ /*attr begins with value or it contain dash.*/
+
+/* div[class|="box"]{
+ 	background-color: silver;
+ 	width: 100px;
+ 	height: 100px;
+ 	margin:5px;
+ }*/
+
+  /*A[attr$=val]{}*/
+  /*attribute ends with value*/
+  /*ending match*/
+
+ /* img[alt$="picture"]{
+  	border:2px solid red;
+  	border-radius: 50%;	
+  }*/
+
+/*a[class$="anchor"]{
+	font-family: fantasy;
+}*/
+
+ /*A[attr*=val]{}*/
+ /*value occurs anywhere in attribute,*/
+	/*a[class*="anchor"]{
+		font-family: fantasy;
+	}*/
+
+ /*A[attr~=val]{}*/
+ /*value matches attribute ub space separated list*/
+
+a[class~="dark"]{
+	font-family: fantasy;
+}
+
+img[alt~="of"]{
+	width: 500px;
+	height: 200px;
+	border:2px solid green;
+}
+
+</style>
+</head>
+<body>
+
+	<a href="" class="dark anchor-ins border">Instagram</a>
+	<a href="" class="fb-anchor dark border ">Facebook</a>
+	<a href="" class="fb-anchor-new dark ">New</a>
+
+	<img src="arrow.png" alt="Some of picture">
+	<img src="arrow.png" alt="Some of other picture" width="200px">
+
+
+	<div class="box" id="MyId"></div>
+	<div class="box-rounded" id="MyId"></div>
+	<div class="box-shaped" id="sdad"></div>
+
+	<input type="text" name="some">
+	<input type="email" name="thing">
+
+
+
+
+
+</body>
+</html>

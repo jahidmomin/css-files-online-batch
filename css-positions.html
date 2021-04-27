@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Positions</title>
+	<style type="text/css">
+		.box{
+			width: 100px;
+			height: 100px;
+			background-color: lightgreen;
+			border:1px solid;
+			box-shadow: 0 5px 6px 2px ;
+			text-align: center;
+			font-size: large;
+			font-family: cursive;
+			/*position: static;*/
+			/* when position is static ,,, helper props cant work.*/
+
+			/*relative to itself ...*/
+			/*position: relative;*/
+		/*	top: 0px;
+			left:0px;*/
+			/*bottom: 20px;*/
+			/*right: 20px;*/
+
+
+			/* normal flow ..relative to itself.. */
+			/*position: relative;*/
+			/*top: 100px;*/
+
+			/*relative to its parent...but normal flow...parents ke .... overlap*/
+			/*position: absolute;*/
+			/*left: 200px;*/
+			/*top:100px;*/
+			/*z-index: 12;*/
+
+			/* element vo fixed .. */
+			position: fixed;
+			right: 10px;
+			bottom: 10px;
+
+		}
+
+		p{
+			/*position: absolute;*/
+			/*z-index: 11;*/
+		}
+		/*.obox{
+			width: 400px;
+			height: 400px;
+			background-color: tan;
+			border:1px solid;
+			box-shadow: 0 5px 6px 2px ;
+			text-align: center;
+			font-size: xx-large;
+			font-family: cursive;
+			
+		}*/
+
+		li{
+			display: inline-block;
+			padding: 20px;
+		}
+
+		#menu{
+			background-color: red;
+
+			/* stick at particular position*/
+			position: sticky;
+			top: 10px;
+		}
+
+		.sea{
+			width: 300px;
+			height: 300px;
+			background-color: red;
+			position: relative;
+			left: 200px;
+		}
+
+		.pbox{
+			width: 50px;
+			height: 50px;
+			background-color: green;
+			position: relative;
+			left: 100px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <div class="obox"> -->
+		<!-- Outer Box -->
+		
+		<div class="sea">
+			<div class="pbox">
+				
+			</div>
+		</div>
+	
+
+		<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+
+
+			<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+				
+		<div id="menu">
+			<ul>
+				<li>Home</li>
+				<li>About</li>
+				<li>Gallery</li>
+				<li>Contact</li>
+			</ul>
+		</div>	
+		<div class="box">
+			<!-- Inner BOX -->
+
+			Chat With Us
+		</div>
+
+		<p>Lorem, ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores, incidunt quisquam, unde sapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+
+			<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+				<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+					<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+						<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+							<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+
+
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p><p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								<p>Lsadasdsadsadsad da sdsadsadsad sa d sadapiente veritatis sunt quidem quae neque, ea maiores praesentium labore expedita adipisci recusandae reiciendis culpa dolorem exercitationem vitae explicabo. Quas nemo ex autem natus, suscipit beatae, ullam doloribus? Ut vitae magni culpa expedita unde ipsa natus facere quasi. Nostrum voluptatum esse obcaecati itaque reiciendis vel dolor ratione in laboriosam quibusdam optio quisquam consectetur aut nemo suscipit magni repellat architecto nihil maxime, atque explicabo veniam, fugit, aspernatur earum perspiciatis? Ipsam numquam aperiam quas perferendis, ad dolor mollitia iste vero expedita repudiandae deleniti minus officiis ipsa tempora. Enim, officia!</p>
+								v
+	<!-- </div> -->
+</body>
+</html>

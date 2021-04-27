@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Display</title>
+	<style type="text/css">
+		ul{
+			background-color: lightgreen;
+		}
+		li{
+			background-color: #229954;
+			border: 2px solid;
+			padding: 2px;
+			margin: 3px;
+
+			/*inline elements behavior*/
+			/*display: inline;*/
+
+			/*block*/
+			/*display: block;*/
+
+			display:block;
+
+		}
+		.second{
+			/* for hide*/
+			/*display: none;*/
+		}
+
+		span{
+			background-color: #229954;
+			/* block element */
+			/*display: block;*/
+
+			/*inline+block*/
+			/*bydef->inline */
+			/*display: inline-block;*/
+		
+
+			padding: 10px;
+
+			/* top bottom margin not work*/
+			margin: 20px;
+
+			/*not works */
+			width: 500px;
+
+			/*?? how ?? */
+			/*display: block;*/
+			/*display: inline-block;*/
+		}
+	</style>
+</head>
+<body>
+	<span>
+		Hello
+	</span>
+
+	<ul>
+		<li>SpiderMan</li>
+		<li class="second">SuperMan</li>
+		<li>Wonder Women</li>
+	</ul>
+
+
+	<span>1</span>
+	<span>2</span>
+	<span>3</span>
+	<span>4</span>
+
+	<style type="text/css">
+		a{
+			/*not work*/
+			width: 500px;
+			margin: 22px;
+			/*imp */
+			display: list-item;
+			border: 1px solid;
+			list-style-type:circle;
+			list-style-position: outside;
+		}
+	</style>
+
+	<!-- for same page : # -->
+	<a href="#">Hello</a>
+	<a href="#">asdsd</a>
+	<a href="#">asdsa</a>
+</body>
+</html>

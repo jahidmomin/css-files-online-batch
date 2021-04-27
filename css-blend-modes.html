@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3 background blend mode</title>
+	<style type="text/css">
+		.box{
+			width: 440px;
+			height: 440px;
+			border:1px solid ;
+			background-image:linear-gradient(red,green,blue) , url('https://picsum.photos/440/440'),url('https://picsum.photos/401/441'); 
+			/*img with grdient*/
+			background-blend-mode:hard-light;
+		}
+		h1{
+			/*no need of bg img*/
+			background-image:linear-gradient(red,green,blue) ; 
+			mix-blend-mode:luminosity;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<h1>Hello</h1>
+	</div>
+</body>
+</html>

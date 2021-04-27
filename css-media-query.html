@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Media Query</title>
+	<style type="text/css">
+
+		body{
+			background-color: red;
+		}
+
+		p{
+			font-size:50px;
+			padding: 10px;
+			text-align: justify;
+			border:1px solid;
+		}
+
+		/*breakpoint 1*/
+		/*max width 500px . is se kam to bhi chalega*/
+		/*min width 500px . is se jyada to bhi chalega*/
+		/* when we want to apply css on print then ise print in Media query*/
+		@media screen and (max-width:700px){
+			p{
+				font-size: 25px;
+				/*background: red;*/
+				padding: 20px;
+			}
+			body{
+				background: green;
+			}
+		}
+	</style>
+</head>
+<body>
+	
+</body>
+</html>

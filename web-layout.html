@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Website Layout</title>
+	<style type="text/css">
+		body{
+			font-family: cursive;
+		}
+		ul{
+			list-style: none;
+		}
+
+		#box{
+			border:0px solid black;
+			width: 1000px;
+			background-color: white;
+			margin: 0 auto;
+		}
+		#header{
+			height: 100px;
+			background-color: lightgreen;
+			text-align: center;
+		}
+		#header h1{
+			padding: 30px 0 0 10px;
+		}
+		#menu{
+			background-color: lightgreen;
+		}
+		#menu li{
+			display: inline-block;
+		}
+
+		#menu li a{
+			display: block;
+			padding: 5px 10px;
+			margin:5px;
+			color: black;
+			text-decoration-line: none;
+			
+		}
+
+		#main{
+			height: 100%;
+		}
+		#content{
+			background-color: #58D68D;
+			width: 800px;
+			/*820*/
+			float: left;
+			min-height: 600px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+
+		#content  h2{
+			background-color: orange;
+			padding: 10px;	
+		}
+		#sidebar{
+			background-color: #F1948A;
+			width: 200px;
+			float: right;
+			min-height: 600px;
+			text-align: center;
+		}
+
+		#sidebar li{
+			padding: 5px 10px;
+			margin-left:-30px;
+		}
+
+
+		#sidebar li a{
+			display: block;
+			padding: 5px 10px;
+			margin:5px;
+			color: black;
+			/*background-color: orange;*/
+			text-decoration: none;
+		}
+
+		#footer{
+			background-color: lightgreen;
+			clear: both;
+			padding: 5px 10px;
+			text-align: center;
+		}
+
+
+
+		/*pseudo classes*/
+		/*special chiz/.*/
+		li a:hover{
+			background-color: orange;
+			border-radius: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+		<div id="header">
+			<h1>Pro Web</h1>
+		</div>
+		<div id="menu">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+		</div>
+		<div id="main">
+			<div id="content">
+			<h2>Design And Developement</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
+		</div>
+		<div id="sidebar">
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About us</a></li>
+				<li><a href="#">Gallery</a></li>
+				<li><a href="#">Contact us</a></li>
+			</ul>
+			<h4>Trending Topics</h4>
+			<ul>
+				<li><a href="#">Menu 1</a></li>
+				<li><a href="#">Menu 2</a></li>
+				<li><a href="#">Menu 3</a></li>
+				<li><a href="#">Menu 4</a></li>
+			</ul>
+		</div>
+		</div>
+		<div id="footer">
+			<h3>All Rights Reserved , &copy; 2021</h3>
+		</div>
+	</div>
+</body>
+</html>

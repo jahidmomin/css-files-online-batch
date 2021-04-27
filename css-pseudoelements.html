@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css Pseudo ELements</title>
+	<style type="text/css">
+		body{
+			font:19px/25px cursive ;
+			padding: 10px 0 0 20px;
+		}
+		h1{
+			font-size: 30px;
+		}
+
+		.fl:first-letter{
+			color: red;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+
+		.fline::first-line{
+			color: red;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+
+		li::first-line{
+			color: red;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+		
+		/*::selection -> css3;*/
+		/*whole dom*/
+		::selection{
+			color:red;
+			background: lightgreen;
+		}
+		p::selection{
+			color:green;
+			background: lightgreen;
+		}
+
+
+/*whole DOM*/
+		::placeholder{
+			color: red;
+			font-family: fantasy;
+		}	
+
+		input::placeholder{
+			color: red;
+			font-family: fantasy;
+		}	
+
+		/*selector:PseidoClass::PsidoElement{
+			
+		}*/
+
+		.afterStyle:hover::after{
+			content: "Jahid";
+			/*content: url(car.jpg);*/
+			background-color: red;
+			padding: 10px;
+			border-radius: 20px;
+		}
+
+		.afterStyle::before{
+			/*content: "Welcome ";*/
+			content: url(arrow.png);
+			width: 10px;
+			height: 10px;
+			border:1px solid;
+			border-radius: 50%;
+		}
+
+		/*list ke lie ...bullets */
+		::marker{
+			color:blue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Psuedo Element Selectors</h1>
+	<!-- 	:: -> :
+	:first-letter
+	:first-line
+	:selection
+	:placeholder -->
+
+
+<!-- css ke through img,content -->
+<!-- 	::before
+	::after 
+	::marker
+-->
+	<ul>
+		<li>HTML</li>
+		<li>CSS</li>
+		<li>Bootstrap</li>
+		<li>JS</li>
+	</ul>
+
+
+	<!-- <h3 class="afterStyle">::before Hello , ::after</h3> -->
+	<h3 class="afterStyle">Hello ,</h3>
+
+
+	<label>Enter Name</label>
+	<input type="text" name="fname" placeholder="Enter Full Name">
+
+<input type="text" name="fname" placeholder="Enter last Name">
+
+
+	<p class="fl">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Excepturi quaerat autem ex deleniti debitis expedita ducimus quidem itaque, veritatis eum inventore! Perferendis ipsam voluptate doloribus nostrum, laborum ipsum animi officiis tenetur laboriosam magnam, provident saepe, illum, rem corporis sequi. Porro, cumque amet incidunt repellendus tempore veniam sunt reiciendis placeat esse, accusantium quidem ut adipisci quae quaerat eligendi molestias ad natus est aliquid ipsa rem nulla sit omnis odit delectus! Aut cupiditate rem nam dolorum suscipit voluptas accusamus ex necessitatibus reprehenderit minima quos quisquam repellat tenetur impedit at, asperiores aliquid quaerat laudantium provident? Aspernatur, perspiciatis. Quo unde ea recusandae temporibus quas.</p>
+
+	<ul>
+		<li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt soluta, dolor minus repellendus eum similique, quasi non minima iusto, atque hic quia odit, suscipit. Neque, dolores. Esse, id! Tempora praesentium ea mollitia saepe recusandae dolorem, obcaecati aliquid. Dolor praesentium modi quisquam! Repudiandae in dolore ipsa quisquam incidunt quos ipsam consequuntur molestiae ad. Sit, temporibus. Totam in culpa officia aut odit similique minus, accusamus! Veritatis quos veniam nihil porro exercitationem fugiat, atque quam facere magnam asperiores ducimus pariatur temporibus velit at consequuntur! At tempore ducimus corrupti aspernatur culpa, atque expedita rerum ipsum possimus laboriosam ea animi explicabo itaque neque nesciunt aperiam?</li>
+		<li>CSS</li>
+		<li>JS</li>
+	</ul>
+
+
+	<p class="fline">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+</body>
+</html>

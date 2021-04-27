@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css border image </title>
+	<style type="text/css">
+		p{
+			width: 900px;
+			border:20px solid red;
+
+			/*
+				css3
+				6 properties.
+			*/
+			background-color: lightgreen;
+			/*border-image-source: url(groovy.png);*/
+			/*slices*/
+			/*border-image-slice:50;*/
+			/*X Y axis*/
+			/*border-image-slice:40 40;*/
+			/*border-image-repeat: stretch;*/
+			/*border-image-repeat: repeat;*/
+			/*border-image-repeat: round;*/
+			/*border-image-repeat: space;*/
+			/*border-image-repeat:round space;*/
+
+			/*borderr0image ko kaha leke jana h*/
+			/*border-image-outset: 25px;*/
+
+			/*border img width*/
+			/*border-image-width:25px; */
+
+
+			/*source | slice | width | outset | repeat */
+
+			/*border-image: url(groovy.png) 40 40 / 25px / 25px round;*/
+
+
+			border-image: linear-gradient(45deg,red,yellow,green) 10 / 25px / 25px round;
+
+
+		}
+
+		/*https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Background_and_Borders/Border-image_generator*/
+		div{
+			border-image-slice:15 15 15 15;border-image-width:10px 10px 10px 10px;border-image-outset:0px 0px 0px 0px;border-image-repeat:round round;border-image-source:url("https://mdn.mozillademos.org/files/6011/border-image-3.png");
+		}
+	</style>
+</head>
+<body>
+	<p>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</div>
+</body>
+</html>
