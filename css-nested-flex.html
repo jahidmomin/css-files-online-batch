@@ -1,103 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Css Flexbox</title>
+	<title></title>
 	<style type="text/css">
-
-
-		.container{
-			/*used for practice/*/
-			/*https://cssreference.io/*/
-			
-			background-color: #eee;
-			width: 600px;
-			height: 400px;
-			margin: auto;
-			/*padding: 10px;*/
-			border:3px solid #000;
-
-			/*flexbox*/
+		.fp-c{
+			display:flex;
+			background-color: tan;
+			width: 700px;
+			height: 500px;
+			flex-direction: row;
+			align-items: center;
+		}
+		.fp-c > div{
+			width: 300px;
+			height: 300px;
+		}
+		.item1 > div{
+			width: 50px;
+			height: 50px;
+			background-color: white;
+		}
+		.item1{background-color: red;
 			display: flex;
-
-
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
 		}
-
-		.items , .Iitems{
-			color: #fff;
-			/*font-size: 20px;*/
-			text-align: center;
-			padding: 10px;
-			font-weight: bolder;
-			font-family: cursive;
-			width: 100px;
-			flex-grow: 1;
-		}
-
-
-
-		.item1{
-			background-color: orangered;
-			display: flex;
-			/*flex-direction: column;*/
-			padding: 10px;
-			flex-basis: 400px;
-		}
-
-
-
-
-
-		.item2{
-			background-color: yellowgreen;
+		.item2{background-color: green;}
+		.item3{background-color: blue;}
 		
-		}
-		.item3{
-			background-color: MEDIUMPURPLE;	
-			
-		}
-		.item4{
-			background-color: hotpink;
-		
-		}
-
-
-		.item5{
-			background-color: royalblue;
-		}
-		.item6{
-			background-color: silver;
-		}
-		.item7{
-			background-color: red;
-		}
-		.item8{
-			background-color: tomato;
-		}
-
-		.item9{
-			background-color: skyblue;
-		}
-		.item10{
-			background-color: green;
-		}
-		.item11{
-			background-color: dodgerblue;
-		}
-
 	</style>
 </head>
 <body>
-	<div class="container">
-		<div class="items item1">
-			<div class="Iitems" style="background-color: wheat;align-items: flex-end;">One</div>
-			<div class="Iitems"style="background-color: green;align-items: flex-start;">Two</div>
-			<div class="Iitems" style="background-color: yellow;align-items: center;">Three</div>
-			<div class="Iitems" style="background-color: violet;align-items: baseline;">Four</div>
+	<div class="fp-c">
+		<div class="item1">
+			<div style="align-self: flex-start;flex-basis: 200px">1</div>
+			<div>2</div>
+			<div style="align-self: flex-end;">3</div>
 		</div>
-		<div class="items item2">Two</div>
-		<div class="items item3">Three</div>
-		<div class="items item4">Four</div>
-
+		<div class="item2">2</div>
+		<div class="item3">3</div>
 	</div>
 </body>
 </html>

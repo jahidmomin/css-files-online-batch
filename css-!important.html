@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Css !important</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+	<style type="text/css">
+		/*<!-- tag selector -->*/
+		/*h1{
+			background-color: red;
+		}*/
+
+		/*internal css*/
+
+	
+	
+	.someClass2{
+		color: orange;
+		/*font-family: monospace !important;*/
+	}
+
+	/*.someClass{*/
+		/*override so last wali property will work*/
+		/*color: yellow;*/
+		/*font-family: monospace;*/
+		/*background-color: red;*/
+	/*}		*/
+
+	#someId{
+		color: purple;
+	}
+
+
+	h2{
+			color: red;
+			font-family: cursive;
+	}
+	/*css*/
+
+	/*class (Low priority than Id) -> Id (High Proorit Than class)*/
+
+	/*class -> ID -> Tag Selector ? */
+</style>
+</head>
+<body>
+	<!-- inline css high priority -->
+	<h1 style="background-color: green;">Hello CSS</h1>
+
+	
+	<h2 class="someClass someClass2">Hello CSS 2</h2>
+
+	<!-- inline style -->
+
+	<!-- (High Priority)inline -> internal -> external(Low Priority) -->
+
+
+
+
+</body>
+</html>
