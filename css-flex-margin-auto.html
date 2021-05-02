@@ -13,20 +13,14 @@
 			width: 600px;
 			height: 400px;
 			margin: auto;
-			padding: 10px;
+			/*padding: 10px;*/
 			border:3px solid #000;
 
 			/*flexbox*/
 			display: flex;
 		
-			flex-flow: row wrap;
-			/* vertically align for multple rows..*/
-			/*align-content: stretch;*/
-			/*align-content: flex-start;*/
-			/*align-content: flex-end;*/
-			/*align-content: center;*/
-			/*align-content: space-between;*/
-			/*align-content: space-around;*/
+			/*flex-flow: row wrap;*/
+
 		}
 
 		.items{
@@ -36,27 +30,28 @@
 			padding: 10px;
 			font-weight: bolder;
 			font-family: cursive;
-			margin: 10px;
-			width: 90px;
+			width: 100px;
+			/*flex-grow: 1;*/
+
+			/*why use flex-shrink?*/
+			/*responsive ness ke liye*/
 		}
 
 		.item1{
 			background-color: orangered;
-		
+			margin-bottom: auto;
 		}
 		.item2{
 			background-color: yellowgreen;
-			
-			
+			margin-top: auto;
 		}
 		.item3{
-			background-color: MEDIUMPURPLE;
-						
+			background-color: MEDIUMPURPLE;	
+			margin-left: auto;		
 		}
 		.item4{
 			background-color: hotpink;
-			
-			
+			margin-right: auto;
 		}
 
 
@@ -65,15 +60,12 @@
 		}
 		.item6{
 			background-color: silver;
-			order: -3;
 		}
 		.item7{
 			background-color: red;
-			order: -2;
 		}
 		.item8{
 			background-color: tomato;
-			order: -1;
 		}
 
 		.item9{
@@ -86,7 +78,6 @@
 			background-color: dodgerblue;
 		}
 
-		
 	</style>
 </head>
 <body>
@@ -95,12 +86,6 @@
 		<div class="items item2">Two</div>
 		<div class="items item3">Three</div>
 		<div class="items item4">Four</div>
-
-
-		<div class="items item5">Five</div>
-		<div class="items item6">Six</div>
-		<div class="items item7">Seven</div>
-		<div class="items item8">Eight</div>
 
 	</div>
 </body>

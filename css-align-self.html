@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Css Flexbox</title>
+	<title>Css Flexbox Align  Self</title>
 	<style type="text/css">
 
 
@@ -20,13 +20,9 @@
 			display: flex;
 		
 			flex-flow: row wrap;
-			/* vertically align for multple rows..*/
-			/*align-content: stretch;*/
-			/*align-content: flex-start;*/
-			/*align-content: flex-end;*/
-			/*align-content: center;*/
-			/*align-content: space-between;*/
-			/*align-content: space-around;*/
+			
+			/*align-items: center;*/
+
 		}
 
 		.items{
@@ -42,20 +38,21 @@
 
 		.item1{
 			background-color: orangered;
-		
+			/*align-content/align-items override*/
+			align-self: flex-start;
 		}
 		.item2{
 			background-color: yellowgreen;
-			
+			align-self: center;
 			
 		}
 		.item3{
 			background-color: MEDIUMPURPLE;
-						
+			align-self: flex-end;	
 		}
 		.item4{
 			background-color: hotpink;
-			
+			align-self: baseline;
 			
 		}
 
@@ -65,15 +62,12 @@
 		}
 		.item6{
 			background-color: silver;
-			order: -3;
 		}
 		.item7{
 			background-color: red;
-			order: -2;
 		}
 		.item8{
 			background-color: tomato;
-			order: -1;
 		}
 
 		.item9{
@@ -96,12 +90,17 @@
 		<div class="items item3">Three</div>
 		<div class="items item4">Four</div>
 
-
+<!-- 
 		<div class="items item5">Five</div>
 		<div class="items item6">Six</div>
 		<div class="items item7">Seven</div>
 		<div class="items item8">Eight</div>
+ -->
 
+	<!-- 	<div class="items item9">Nine</div>
+		<div class="items item10">Ten</div>
+
+		<div class="items item11">Eleven</div> -->
 	</div>
 </body>
 </html>
